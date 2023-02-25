@@ -1,23 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { Layout, Space } from 'antd';
+import { Layout } from 'antd';
 import Video from '../Video/Video';
 import { fetchFromAPI } from '../../utils/fetchFromAPI';
 import { useParams } from 'react-router-dom';
 import './SearchFeed.css'
-const { Header, Footer, Sider, Content } = Layout;
+const { Content } = Layout;
 
 const contentStyle = {
   color: '#000',
   backgroundColor: '#fff',
 };
-const siderStyle = {
-  color: '#fff',
-  backgroundColor: '#000',
-  borderRight: '1px solid #ccc'
-};
 
 function SearchFeed() {
-  const [selectedCategory, setSelectedCategory] = useState('')
   const [ListVideo, setListVideo] = useState([])
   const { searchTerm } = useParams()
 

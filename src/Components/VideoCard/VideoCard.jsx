@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './VideoCard.css'
 import { Link } from 'react-router-dom'
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import { Avatar, Card } from 'antd';
-const { Meta } = Card;
 
 
 function VideoCard({ videoo: { id: { videoId }, snippet } }) {

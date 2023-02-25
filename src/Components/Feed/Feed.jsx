@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Layout, Space } from 'antd';
+import { Layout} from 'antd';
 import SliderBar from '../SliderBar/SliderBar';
 import Video from '../Video/Video';
 import './Feed.css'
 import { fetchFromAPI } from '../../utils/fetchFromAPI';
-const { Header, Footer, Sider, Content } = Layout;
+const { Sider, Content } = Layout;
 
 const contentStyle = {
   color: '#000',
@@ -46,7 +46,7 @@ function Feed() {
       <div className="Feed-content">
         <Content style={contentStyle}>
           <div className="Feed-title">
-            {selectedCategory == 'Mới' ? 'Trang Chủ' : selectedCategory}
+            {selectedCategory === 'Mới' ? 'Trang Chủ' : selectedCategory}
           </div>
           <Video ListVideo={ListVideo} />
         </Content>

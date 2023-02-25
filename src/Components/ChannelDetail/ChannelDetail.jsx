@@ -1,4 +1,3 @@
-import { Layout } from 'antd';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { fetchFromAPI } from '../../utils/fetchFromAPI';
