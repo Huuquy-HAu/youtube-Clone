@@ -1,0 +1,36 @@
+.VideoCard {
+    width: 300px;
+    margin: 20px 10px;
+}
+
+.VideoCard a {
+    text-decoration: none;
+}
+
+.VideoCard .title {
+    white-space: unset;
+    text-overflow: ellipsis; /* chuyển đoạn văn bản dài thành dấu chấm ba chấm (...) */
+    display: -webkit-box; /* thêm tiền tố cho Safari */
+    -webkit-line-clamp: 2; /* giới hạn độ cao của hộp là 2 dòng */
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    font-weight: 500;
+    color: black;
+}
+
+
+.VideoCard img {
+    width: 100%;
+    height: 165px;
+    border-radius: 10px;
+    object-fit: cover !important;
+}
+
+.VideoCard .channel {
+    margin-top: 10px;
+    
+}
+
+.VideoCard .channel a {
+    color: gray;
+}

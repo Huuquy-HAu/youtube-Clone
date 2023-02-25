@@ -1,0 +1,28 @@
+.Navbar-container {
+    display: flex;
+    position: sticky;
+    background: #fff;
+    top: 0;
+    justify-content: space-between;
+    color: black;
+    z-index: 1;
+}
+
+
+.Navbar-logo {
+    font-size: 20px;
+    padding: 18px 16px;
+}
+
+.Navbar-logo span {
+    font-weight: 600;
+}
+
+.Navbar-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.Navbar-logo svg {
+    color: red;
+}

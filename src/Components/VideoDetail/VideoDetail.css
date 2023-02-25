@@ -1,0 +1,17 @@
+.VideoDetail-Player {
+    width: 1080px !important;
+    height: 608px !important;
+}
+
+
+
+.channelView {
+    display: flex;
+    justify-content: space-between;
+}
+
+.channelView-title {
+    font-size: 20px;
+}
+
+
